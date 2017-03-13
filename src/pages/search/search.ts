@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { NavController, NavParams, Searchbar} from 'ionic-angular';
+import { Keyboard } from 'ionic-native';
 
 /*
   Generated class for the Search page.
@@ -13,7 +14,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 
 export class SearchPage {
-// @ViewChild(Searchbar) searchbar: Searchbar;
+  @ViewChild(Searchbar) searchbar: Searchbar;
 	searchQuery : any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	// var searchQuery;
@@ -22,11 +23,12 @@ export class SearchPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchPage');
   }
- //  ionViewDidEnter() {
- //      setTimeout(() => {
- //        this.searchbar.setFocus();
- //   });
- // }
+  ionViewDidEnter() {
+        setTimeout(() => {
+          this.searchbar.setFocus();
+          Keyboard.show();//show keyboard for android
+     });
+   }
   onCancel(){
   	this.navCtrl.pop();
   }

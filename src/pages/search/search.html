@@ -5,21 +5,17 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
- <!--  <ion-navbar>
-    <ion-title>search</ion-title>
-  </ion-navbar> -->
-	<ion-searchbar
-	  
-	  showCancelButton="true"
-	  (ionCancel)="onCancel($event)"
-	  animated="true"
-	  (search)="onSearch($event)"
-
->
-	</ion-searchbar>
+  	<ion-navbar hideBackButton="true" color="primary">
+		<ion-searchbar  
+		  	showCancelButton="true"
+		  	(ionCancel)="onCancel($event)"
+		  	animated="true"
+		 	(search)="onSearch($event)"
+			autofocus
+			>
+		</ion-searchbar>
+	</ion-navbar>
 </ion-header>
-
 
 <ion-content padding>
 
