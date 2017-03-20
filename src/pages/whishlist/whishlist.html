@@ -6,13 +6,29 @@
 -->
 <ion-header>
 
-  <ion-navbar color="primary">
-    <ion-title>Whishlist</ion-title>
+  <ion-navbar color="primary" hideBackButton="true">
+    <ion-title>Whish List</ion-title>
+    <ion-buttons end>
+      <button ion-button  (click)="goBack($event)">
+		Done
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<!-- <ion-content padding>
+	
+</ion-content> -->
 
-</ion-content>
+<ion-content text-center class="vertical-align-content">
+  <ion-grid>
+        <ion-row>
+              <ion-col>
+                    <h1 style="color: #959595;">Whish List</h1>
+                    <h3 style="color: #959595;">You do not currently have anything on your whish list.</h3>
+              </ion-col>
+        </ion-row>
+  </ion-grid>
+ </ion-content>

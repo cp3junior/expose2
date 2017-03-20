@@ -1,0 +1,19 @@
+page-message {
+
+}
+.chat_buble_sent{
+	color: white!important;
+    background: #387ef5;
+    display: inline-flex;
+    padding: 8px 12px;
+    max-width: 250px;
+    border-radius: 15px;
+}
+.chat_buble_received{
+	color: black!important;
+    background: #dedede;
+    display: inline-flex;
+    padding: 8px 12px;
+    max-width: 250px;
+    border-radius: 15px;
+}

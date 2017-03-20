@@ -8,6 +8,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { CartPage } from '../pages/cart/cart';
 import { SearchPage } from '../pages/search/search';
 import { WhishlistPage } from '../pages/whishlist/whishlist';
+import { MessagePage } from '../pages/message/message';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { WhishlistPage } from '../pages/whishlist/whishlist';
     TabsPage,
     CartPage,
     SearchPage,
-    WhishlistPage
+    WhishlistPage,
+    MessagePage
   ],
   imports: [
     IonicModule.forRoot(MyApp, {
@@ -35,7 +37,8 @@ import { WhishlistPage } from '../pages/whishlist/whishlist';
     TabsPage,
     CartPage,
     SearchPage,
-    WhishlistPage
+    WhishlistPage,
+    MessagePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

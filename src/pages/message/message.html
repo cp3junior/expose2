@@ -1,0 +1,61 @@
+<!--
+  Generated template for the Message page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Woody</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+	<ion-list inset no-lines>
+		<ion-item class="msg_sent" text-right>
+		    <p class="chat_buble_sent" item-right>Hi!</p>
+		</ion-item>
+		<ion-item class="msg_sent">
+		    <p class="chat_buble_sent" item-right>How are you!?</p>
+		</ion-item>
+		<ion-item class="msg_received">
+			<ion-avatar item-left>
+		        <img src="https://placehold.it/150x150">
+		    </ion-avatar>
+		    <p class="chat_buble_received">I'm fine!</p>
+		</ion-item>
+		<ion-item class="msg_received">
+			<ion-avatar item-left>
+		        <img src="https://placehold.it/150x150">
+		    </ion-avatar>
+		    <p class="chat_buble_received">And you?</p>
+		</ion-item>
+		<ion-item class="msg_sent">
+		    <p class="chat_buble_sent" item-right>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dolorum, quod deleniti dolorem voluptatibus aut, qui sequi expedita culpa provident reprehenderit, fuga inventore quibusdam voluptates id fugit. Mollitia perspiciatis, tempora.</p>
+		</ion-item>
+		<ion-item class="msg_received">
+			<ion-avatar item-left>
+		        <img src="https://placehold.it/150x150">
+		    </ion-avatar>
+		    <p class="chat_buble_received" item-left>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quaerat impedit perferendis dolorum laboriosam reprehenderit molestias esse tenetur distinctio, hic necessitatibus eos consequatur. Quo eveniet alias, ex architecto laboriosam incidunt!</p>
+		</ion-item>
+		<ion-item class="msg_sent">
+		    <p class="chat_buble_sent" item-right>How are you!?</p>
+		</ion-item>
+
+	</ion-list>
+</ion-content>
+
+<ion-footer>
+	<form action="#" class="footer_form" >
+		<ion-list >
+			<ion-item>
+		    	<ion-input placeholder="Type a message"></ion-input>
+		  		<button ion-button item-right (click)="sendMessage()" >Send</button>
+		  	</ion-item>
+	  	</ion-list>
+	</form>
+</ion-footer>

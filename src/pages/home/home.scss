@@ -2,3 +2,23 @@ page-home {
 
 }
 
+ion-scroll {
+  white-space: nowrap;
+  height: 150px;
+  border-bottom: 1px solid #dedede;
+}
+.newprod_scroll .card-md{
+	width: calc(60% - 20px);
+	white-space: normal;
+}
+.newprod_scroll .card-ios{
+	width: calc(60% - 24px);
+    white-space: normal;
+	
+}
+
+
+
+
+
+

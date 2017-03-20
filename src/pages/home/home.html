@@ -5,21 +5,24 @@
         <ion-icon name="qr-scanner"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-searchbar  
+    <ion-title> Expose </ion-title>
+    <!-- <ion-searchbar  disabled="true" readonly="true"
       (ionFocus)="openSearch($event)" >
-    </ion-searchbar>
+    </ion-searchbar> --> 
     <ion-buttons end>
+      <button ion-button icon-only (click)="openSearch($event)">
+        <ion-icon name="search" ></ion-icon>
+      </button>
       <button ion-button icon-only (click)="openWhishList()">
         <ion-icon name="heart" ></ion-icon>
       </button>
     </ion-buttons> 
   </ion-navbar>
- 
-</ion-header>
+</ion-header> 
 
-<ion-content >
-  <div class="sliders" style="height: 150px;">
-    <ion-slides autoplay="3000" loop="true" pager="true" parallax="true" (ionSlideTap)="slideClick()">
+<ion-content>
+  <div class="sliders">
+    <ion-slides autoplay="3000" loop="true" pager="true"  style="height: 150px;">
       <ion-slide>
         <img src="assets/images/img1.jpg" alt="image slider">
       </ion-slide>
@@ -31,4 +34,139 @@
       </ion-slide>
     </ion-slides>
   </div>
+  <div class="item">
+      <span style="float: left;">
+        <h5>Categories</h5>
+      </span>
+      <span style="float: right;">
+        <button ion-button clear="true" icon-right style="float: right;">
+        See All <ion-icon name='arrow-forward'></ion-icon>
+      </button>
+      </span>
+  </div>
+    <!-- Content Scroll X -->
+
+      <ion-scroll scrollX="true" scrollY="false">
+        <div style="display: inline-block; margin-right: 30px;">
+        <h1>title</h1>
+        <p>description</p>
+
+        </div>
+        <div style="display: inline-block; margin-right: 30px;">
+        <h1>title 12</h1>
+        <p>description</p>
+
+        </div>
+        <div style="display: inline-block; margin-right: 30px;">
+        <h1>title 133</h1>
+        <p>description</p>
+
+        </div>
+        <div style="display: inline-block; margin-right: 30px;">
+        <h1>title 144</h1>
+        <p>description</p>
+
+        </div>
+        <!-- <div class="scroll-content">
+          <div class="scroll-zoom-wrapper">
+            <img src="assets/images/img3.jpg" alt="image slider">
+            <img src="assets/images/img3.jpg" alt="image slider">
+            <img src="assets/images/img3.jpg" alt="image slider">
+          </div>
+        </div> -->
+      </ion-scroll>
+  <div class="item">
+      <span style="float: left;">
+        <h5>New Products</h5>
+      </span>
+      <span style="float: right;">
+        <button ion-button clear="true" icon-right style="float: right;">
+        See All <ion-icon name='arrow-forward'></ion-icon>
+      </button>
+      </span>
+  </div>
+  <ion-scroll scrollX="true" scrollY="false" class="newprod_scroll">
+        <ion-card style="display: inline-block;" >
+
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+              </ion-card-title>
+            <p>
+              The most popular industrial s audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+        <ion-card style="display: inline-block;">
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+              </ion-card-title>
+            <p>
+              The most popular industrial s audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <!-- <ion-grid>
+          <ion-row>
+            <ion-col>
+              1 of 2
+            </ion-col>
+            <ion-col>
+              2 of 2
+            </ion-col>
+          </ion-row>
+        </ion-grid> -->
+
+
+        
+      </ion-scroll>
+  <h5 text-center>Featured Products</h5>
+   <ion-grid>
+      <ion-row>
+        <ion-col width-50>
+          <ion-card >
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+              </ion-card-title>
+            <p>
+              The most popular industrial s audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+        </ion-col>
+        <ion-col width-50>
+          <ion-card >
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+              </ion-card-title>
+            <p>
+              The most popular industrial s audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+        </ion-col>
+        <ion-col width-50>
+          <ion-card >
+          <ion-card-content>
+            <ion-card-title>
+              Nine Inch Nails Live
+              </ion-card-title>
+            <p>
+              The most popular industrial s audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
 </ion-content>
+
+
+
+

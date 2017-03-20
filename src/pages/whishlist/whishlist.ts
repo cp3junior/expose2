@@ -18,5 +18,8 @@ export class WhishlistPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad WhishlistPage');
   }
+  goBack(){
+  	this.navCtrl.pop();
+  }
 
 }

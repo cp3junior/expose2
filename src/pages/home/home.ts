@@ -24,9 +24,9 @@ export class HomePage {
   	this.navCtrl.push(WhishlistPage);
   }
 
-  slideClick(){
-	let theClickedIndex = this.slider.clickedIndex;
-	alert('clicked on slide '+theClickedIndex);
-	}
+ //  slideClick(){
+	// let theClickedIndex = this.slider.clickedIndex;
+	// alert('clicked on slide '+theClickedIndex);
+	// }
 
 }
